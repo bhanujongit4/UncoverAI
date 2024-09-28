@@ -116,7 +116,7 @@ export default function Home() {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/your-video-id"
+              src="https://youtu.be/8Rr0O1MOx6A"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -142,7 +142,7 @@ export default function Home() {
         </div>
 
         <div className="py-10">
-          <h2 className="text-6xl font-bold text-center py-10">Explore Our Past Results</h2>
+
         </div>
         
         <div className="h-[1000px]"></div>
