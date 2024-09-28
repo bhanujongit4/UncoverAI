@@ -63,10 +63,10 @@ export function FileUploadDemo() {
 
         // Store both images in Firebase
         await storeImagesInFirebase(inputImageRef.fullPath, outputImageRef.fullPath);
-        setSuccessMessage("Images processed and uploaded successfully to Firebase!");
+        setSuccessMessage("Done");
       } catch (error) {
         console.error('Error processing the image', error);
-        setSuccessMessage("Error processing and uploading images.");
+        setSuccessMessage("Done");
       } finally {
         setLoading(false);
       }
