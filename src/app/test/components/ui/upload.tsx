@@ -76,13 +76,13 @@ export function FileUploadDemo() {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg">
-      <div className="flex flex-col md:flex-row gap-4 p-4">
-        <div className="flex flex-col w-full md:w-1/2">
+    <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg p-4">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-col w-full">
           <label htmlFor="file-upload" className="mb-2 font-semibold text-center">Upload image/video</label>
           <FileUpload onChange={handleFileUpload} id="file-upload" />
         </div>
-        <div className="flex flex-col w-full md:w-1/2">
+        <div className="flex flex-col w-full">
           <label htmlFor="validation-upload" className="mb-2 font-semibold text-center">Upload (optional) Validation image</label>
           <FileUpload onChange={handleValidationUpload} id="validation-upload" />
         </div>
@@ -91,11 +91,11 @@ export function FileUploadDemo() {
       <div className="w-full mt-8 p-4 border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg">
         <h3 className="text-center font-semibold mb-4">Please wait as the free instance will spin down with inactivity in render as the model API loads. Reload if it takes more than a minute</h3>
 
-        <div className="flex justify-center gap-4 mb-4">
+        <div className="flex flex-col items-center gap-4 mb-4">
           {apiImage ? (
             <div className="flex flex-col items-center">
               <p className="text-center font-semibold mb-2">Processed Image:</p>
-              <img src={apiImage} alt="API Output" className="max-w-xs rounded-lg" />
+              <img src={apiImage} alt="API Output" className="max-w-full w-72 h-72 object-cover rounded-lg" />
             </div>
           ) : (
             <div className="flex flex-col items-center">
@@ -111,7 +111,7 @@ export function FileUploadDemo() {
           {validationFile ? (
             <div className="flex flex-col items-center">
               <p className="text-center font-semibold mb-2">Uploaded Validation Image:</p>
-              <img src={URL.createObjectURL(validationFile)} alt="Validation" className="max-w-xs rounded-lg" />
+              <img src={URL.createObjectURL(validationFile)} alt="Validation" className="max-w-full w-72 h-72 object-cover rounded-lg" />
             </div>
           ) : (
             <div className="flex flex-col items-center">
@@ -127,13 +127,15 @@ export function FileUploadDemo() {
           </div>
         )}
 
-        <button 
-          onClick={handleProcessImage} 
-          className="mt-4 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600"
-          disabled={loading}
-        >
-          {loading ? 'Processing...' : 'Process and Upload Images'}
-        </button>
+        <div className="flex justify-center">
+          <button 
+            onClick={handleProcessImage} 
+            className="mt-4 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 w-full sm:w-auto"
+            disabled={loading}
+          >
+            {loading ? 'Processing...' : 'Process and Upload Images'}
+          </button>
+        </div>
       </div>
     </div>
   );
