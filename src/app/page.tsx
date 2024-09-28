@@ -111,7 +111,7 @@ export default function Home() {
     
       <div className="flex flex-col overflow-hidden">
         <div className="py-10">
-          <h2 className="text-3xl font-bold text-center">Watch Our <a className="inline-flex items-center gap-x-2 text-lg text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500" href="https://youtu.be/8Rr0O1MOx6A?si=gy_dwHt6uFwwaMG4"target='blank'>
+          <h2 className="text-3xl font-bold text-center">Watch Our <a className="inline-flex items-center gap-x-2 text-2xl text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500" href="https://youtu.be/8Rr0O1MOx6A?si=gy_dwHt6uFwwaMG4"target='blank'>
             Introduction
               <svg className="shrink-0 size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
             </a></h2>
