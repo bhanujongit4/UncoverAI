@@ -144,7 +144,7 @@ export default function Home() {
         <div className="py-10">
           <h2 className="text-6xl font-bold text-center py-10">Explore Our Past Results</h2>
         </div>
-        <ImageGallery />
+        
         <div className="h-[1000px]"></div>
       </div>
 
