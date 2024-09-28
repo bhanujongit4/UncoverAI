@@ -89,7 +89,7 @@ export function FileUploadDemo() {
       </div>
 
       <div className="w-full mt-8 p-4 border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg">
-        <h2 className="text-center font-semibold mb-4">API Output and Validation ✅</h2>
+        <h3 className="text-center font-semibold mb-4">Please wait as the free instance will spin down with inactivity in render as the model API loads. Reload if it takes more than a minute</h3>
 
         <div className="flex justify-center gap-4 mb-4">
           {apiImage ? (
